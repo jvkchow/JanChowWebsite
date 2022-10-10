@@ -139,24 +139,6 @@ html{
     font-weight: 500;
 }
 
-.home .home-content a {
-    display: inline-block;
-    background: #f5c542;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #f5c542;
-    transition: all 0.3s ease;
-}
-
-.home .home-content a:hover {
-    color: #f5c542;
-    background: none;
-}
-
-
 /* similar styling */
 section{
     padding: 100px 0;
@@ -282,13 +264,19 @@ section .title::after{
     color: #f5c542;
     transition: color 0.3s ease;
 }
+.projects .proj-content .card a{
+    color: #fff;
+}
 .projects .proj-content .card:hover i{
-    background: #fff;
+    color: #fff;
 }
 .projects .proj-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.projects .proj-content .card .box .cardlink a:hover{
+    text-decoration: underline;
 }
 
 /* skills section */
