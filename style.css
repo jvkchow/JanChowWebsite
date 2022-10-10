@@ -448,6 +448,9 @@ section .title::after{
         width: 100%;
         margin-bottom: 35px;
     }
+    .skills .skills-content .codeicon i{
+        display: none;
+    }
 }
 
 @media (max-width: 690px) {
@@ -466,10 +469,6 @@ section .title::after{
     .skills .skills-content .card,
     .projects .proj-content .card{
         width: 100%;
-    }
-
-    .skills .skills-content i{
-        display: none;
     }
 }
 
