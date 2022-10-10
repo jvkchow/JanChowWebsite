@@ -467,6 +467,10 @@ section .title::after{
     .projects .proj-content .card{
         width: 100%;
     }
+
+    .skills .skills-content i{
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
