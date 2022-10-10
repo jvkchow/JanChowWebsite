@@ -293,93 +293,35 @@ section .title::after{
 .skills .title::after{
     content: "what i know";
 }
-.skills .skills-content .column{
-    width: calc(50% - 30px);
+.skills .skills-content .codeicon i{
+    color: #f5c542;
+    font-size: 80px;
 }
-.skills .skills-content .left .text{
+.skills .skills-content .card:hover{
+    transform: scale(1.10);
+}
+.skills .skills-content .card{
+    width: calc(50% - 210px);
+    background: #f5c542;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    border: 2px solid #f5c542;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.skills .skills-content .card:hover{
+    color: #f5c542;
+    background: none;
+}
+.skills .skills-content .card .text{
+    font-size: 30px;
+    font-weight: 550;
+    margin: 10px 0 7px 0;
+}
+
+.skills .skills-content .card p{
     font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-
-}
-
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #f5c542;
-
-}
-.skills-content .right .html::before{
-    width: 100%;
-}
-.skills-content .right .css::before{
-    width: 100%;
-}
-.skills-content .right .js::before{
-    width: 100%;
-}
-.skills-content .right .figma::before{
-    width: 100%;
-}
-
-.skills .skills-content .left .bars{
-    margin-bottom: 15px;
-
-}
-.skills .skills-content .left .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .left .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .left .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #f5c542;
-
-}
-.skills-content .left .python::before{
-    width: 100%;
-}
-.skills-content .left .c::before{
-    width: 100%;
-}
-.skills-content .left .java::before{
-    width: 100%;
-}
-.skills-content .left .sqlite::before{
-    width: 100%;
 }
 
 /* contact section */
@@ -496,12 +438,12 @@ section .title::after{
     }
     .about .about-content .right{
         flex: 100%;
-    }
+    }    
+    .skills .skills-content .card,
     .projects .proj-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -521,6 +463,7 @@ section .title::after{
     .home .home-content a{
         font-size: 20px;
     }
+    .skills .skills-content .card,
     .projects .proj-content .card{
         width: 100%;
     }
@@ -533,8 +476,7 @@ section .title::after{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .about .about-content .right .text{
         font-size: 19px;
     }
     .scroll-up-btn{
