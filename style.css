@@ -407,12 +407,7 @@ section .title::after{
     color: rgb(70, 70, 70);
 }
 
-/* responsive media query 
-@media (max-width: 1300px) {
-    .home .max-width{
-        margin-left: 0px;
-    }
-}*/
+/* responsive media query */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
